@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" value="{$zd.keywords}" />
+    <meta name="description" value="{$zd.description}" />
+    <title>{$zd.title}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="__PUBLIC__/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/vendor/owl/owl.carousel.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/vendor/owl/owl.theme.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/blog.css"/>
+    <script src="__PUBLIC__/vendor/jquery.min.js"></script>
+    <script src="__PUBLIC__/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/vendor/owl/owl.carousel.min.js"></script>
+    <script src="__PUBLIC__/js/blog.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="header col-xs-12 col-lg-12">
+            <a href="/blog/index.php/index/index"><img alt="logo" class="logo" src="__PUBLIC__/image/logo.png"/></a>
+            <img class="listPng" src="__PUBLIC__/image/list.png">
+            <ul class="list-inline keyList">
+                <foreach name="key" item="vo">
+                    <li><a href="/blog/index.php/index/blog?keyword={$vo.name}">{$vo.name}</a></li>
+                </foreach>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-2 user">
+            <div class="userCon">
+                <img src="__PUBLIC__/image/p.jpg"/>
+                <p>游客</p>
+            </div>
+            <div class="essayList">
+                <span class="lead">←最新文章</span>
+                <ul class="list-unstyled">
+                    <foreach name="essayNew" item="eN">
+                        <li><a href="/blog/index.php/index/read?id={$eN.id}">{$eN.create_time|date='Y-m-d',###}&nbsp;&nbsp;《{$eN.title}》</a></li>
+                    </foreach>
+                </ul>
+            </div>
+            <div class="tq">
+                <iframe allowtransparency="true" frameborder="0" width="317" height="28" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=3&z=1&t=1&v=0&d=1&bd=0&k=&f=&q=1&e=1&a=1&c=54511&w=317&h=28&align=center"></iframe>
+            </div>
+        </div>
+        <div class="essay col-md-10 col-lg-9 col-sm-12">
+            <div id="owl-demo" class="banner">
+              <foreach name="Position" item="z">
+                  <div class="item">
+                      <img src="{$z.thumb|isThumb=###}" />
+                      <a href="/blog/index.php/index/read?id={$z.id}"><span class="lb_title">{$z.title}</span></a>
+                  </div>
+              </foreach>
+            </div>
+            <foreach name="essayAll" item="eA">
+                <div class="items">
+                    <div class="item_image">
+                        <img alt="这是文章缩图" src="{$eA.thumb|isThumb=###}">
+                    </div>
+                    <div class="item_body">
+                        <a href="/blog/index.php/index/read?id={$eA.id}"><h2 class="item_title">{$eA.title}<small class="item_small">{$eA.small_title}</small></h2></a>
+                        <p class="item_jj">{$eA.description}</p>
+                        <a href="/blog/index.php/index/read?id={$eA.id}" type="button" class="r btn btn-primary">阅读</a>
+                    </div>
+                </div>
+            </foreach>
+            <div class="page">
+                {$pageRes}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

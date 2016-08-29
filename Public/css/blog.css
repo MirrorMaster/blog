@@ -1,0 +1,229 @@
+.r{
+    float: right;
+}
+.l{
+    float: left;
+}
+body{
+    background-color: #fbffca;
+    position: relative;
+}
+/*顶部*/
+.header{
+    background: #99CCCC;
+    color: #fff;
+    overflow: hidden;
+    line-height: 50px;
+    font-size: 18px;
+}
+.keyList{
+    float: right;
+    display: block;
+}
+.keyList a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+.keyList a:hover{
+    color: #c4f8c8;
+}
+.listPng{
+    display: none;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.logo{
+    margin-top: 10px;
+}
+/*用户部分*/
+.user{
+    margin-top: 50px;
+    height: 500px;
+    background-color: #CCFFCC;
+    position: relative;
+}
+.userCon{
+    width:80%;
+    height:150px;
+    margin:0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+.userCon img{
+    width: 120px;
+    height: 120px;
+    border: 2px solid #fff;
+    border-radius:100%;
+    margin:auto;
+    position: absolute;
+    left:0; right: 0;
+}
+.userCon p{
+    position: absolute;
+    left: 0; right: 0;
+    bottom:0;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing:2px;
+}
+.essayList{
+    margin-top: 30px;
+    width:100%;
+}
+.essayList span{
+    text-align: right;
+    display: block;
+}
+/*推荐位*/
+.banner{
+    width:80%;
+    height: 350px;
+    margin:20px auto;
+}
+.banner .item{
+    width:100%;
+    height: 300px;
+}
+.banner .item img{
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index:-1;
+}
+.banner .lb_title{
+    width:100%;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    font-size: 22px;
+    color: #fff;
+}
+/*文章部分*/
+.items{
+    width:80%;
+    height: 150px;
+    margin:20px auto;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(0,0,0,.2);
+}
+.item_small{
+    color: #fff;
+}
+.item_image{
+    width:20%;
+    float: left;
+}
+.item_image img{
+    width:100%;
+    height: 150px;
+}
+.item_body{
+    width:74%;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    height: 100%;
+}
+.item_body button{
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.item_title{
+    width:100%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.tq{
+    position: absolute;
+    bottom: 0;
+}
+@media (max-width: 1200px){
+    .tq{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    .user{
+        display: none;
+    }
+    .owl-item,.banner,.owl-carousel,.owl-theme{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+@media (max-width:490px){
+    .items{
+        margin:30px;
+        margin-bottom: 40px;
+    }
+    .item_small,.item_image{
+        display: none;
+    }
+    .item_body{
+        width:90%;
+    }
+    .keyList{
+        display: block;
+        width:100%;
+        display: none;
+    }
+    .keyList li{
+        float: none;
+        clear: both;
+        display: block;
+        text-align: right;
+    }
+    .listPng{
+        display: inline-block;
+    }
+}
+/*分页样式*/
+.page{
+    width:80%;
+    font-size: 16px;
+    margin:0 auto;
+}
+.page .current{
+    color: #000;
+    display: inline-block;
+    width:30px;
+    text-align: center;
+    background-color: #2D93CA;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    margin:2px;
+}
+.page a{
+    color: #000;
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #2D93CA;
+    border-radius: 4px;
+    margin:1px;
+}
+.page .next,.page .prev,.page .last,.page .first{
+    color: #000;
+    display: inline-block;
+    width:70px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: #2D93CA;
+}

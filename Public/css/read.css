@@ -1,0 +1,61 @@
+body{
+    background-color: #fbffca;
+}
+.header{
+    background: #99CCCC;
+    color: #fff;
+    overflow: hidden;
+    line-height: 50px;
+    font-size: 18px;
+}
+.keyList{
+    float: right;
+    display: block;
+}
+.keyList a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+.keyList a:hover{
+    color: #c4f8c8;
+}
+.listPng{
+    display: none;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.logo{
+    margin-top: 10px;
+}
+.aboutMy{
+    margin-top: 20px;
+}
+.about{
+    border-left: 1px solid #000;
+}
+.gg{
+    margin-top: 380px;
+}
+@media (max-width: 1200px){
+    .about{
+        display: none;
+    }
+}
+@media (max-width:490px){
+    .keyList{
+        display: block;
+        width:100%;
+        display: none;
+    }
+    .keyList li{
+        float: none;
+        clear: both;
+        display: block;
+        text-align: right;
+    }
+    .listPng{
+        display: inline-block;
+    }
+}

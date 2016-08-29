@@ -1,0 +1,46 @@
+<include file="Index/header"/>
+<include file="Index/nav"/>
+<div class="col-lg-11 content">
+    <span class="text-primary lead">后台菜单管理</span>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>名称</th>
+                <th>控制器</th>
+                <th>方法</th>
+                <th>状态</th>
+                <th>需要权限</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo">
+                <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.name}</td>
+                    <td>{$vo.c}</td>
+                    <td>{$vo.f}</td>
+                    <td><a style="cursor: pointer;" class="changeStatus" title="更改状态" data-status={$vo.status} data-cId={$vo.id}>{$vo.status|showStatus=###}</a></td>
+                    <td>{$vo.type|showType=###}</td>
+                    <td><a style="cursor: pointer;" class="del" title="删除" data-id = {$vo.id}><span style="color: #000;" class="glyphicon glyphicon-remove"></span></a>&nbsp;</td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+    </div>
+    <div class="page">
+        {$pageRes}
+    </div>
+    <a href="/blog/admin.php/menu/add" class="btn btn-primary">添加功能</a>
+</div>
+</div>
+</div>
+<script>
+    var SCRIPT = {
+        'delete_url' : '/blog/admin.php/menu/del',
+        'status_url' : '/blog/admin.php/menu/changeStatus'
+    }
+</script>
+<include file="Index/fotter"/>

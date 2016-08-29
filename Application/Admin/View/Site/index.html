@@ -1,0 +1,35 @@
+<include file="Index/header"/>
+<include file="Index/nav"/>
+        <div class="col-lg-11 content">
+            <span class="lead text-primary">站点管理</span>
+            <form class="form-horizontal">
+
+                <div class="form-group">
+                    <label for="title" class="col-lg-2 control-label">站点标题:</label>
+                    <div class="col-lg-5">
+                        <input name="title" value="{$config.title}" id="title" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="keywords" class="col-lg-2 control-label">站点关键字:</label>
+                    <div class="col-lg-5">
+                        <input class="form-control"value="{$config.keywords}"  type="text" name="keywords" id="keywords">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">站点描述:</label>
+                    <div class="col-lg-5">
+                        <textarea class="form-control"  name="description">{$config.description}</textarea>
+                    </div>
+                </div>
+                <button type="button" class="bai_ad btn btn-primary col-xs-12 col-lg-push-2 col-lg-4">提交</button>
+            </form>
+        </div>
+    <div/>
+<div/>
+<script>
+    var SCRIPT = {
+        'save_url' : '/blog/admin.php/site/save'
+    }
+</script>
+<include file="Index/fotter"/>

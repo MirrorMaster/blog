@@ -1,0 +1,312 @@
+/*默认设置*/
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+ul{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*公用类*/
+.hide{
+    display: none; !important
+}
+.show{
+    display: block; !important
+}
+.clearfix:before,
+.clearfix:after{
+    content: ',';
+    display: block;
+    height: 0;
+    visibility:hidden;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+/*顶部导航*/
+.top-menu{
+    position: fixed;
+    top:0;
+    width:100%;
+    background: rgba(0,0,0,.3);
+    height:50px;
+}
+.list{
+    float: right;
+    margin-right: 20px;
+    display: block;
+}
+.logo{
+    float: left;
+    margin:10px 0px 0px 8px;
+    color: #fff;
+}
+.list li{
+    display: inline-block;
+    margin-right:5px;
+    height:50px;
+    line-height: 50px;
+}
+.list li a{
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.list li+li a:hover{
+    text-decoration: underline;
+}
+.ding{
+    position: relative;
+}
+.erweima{
+    position: absolute;
+    width:230px;
+    height:80px;
+    left: -13px;
+    top:50px;
+    background: rgba(0,0,0,.3);
+    border-radius: 5px;
+    display: none;
+    color: #fff;
+}
+.erweima img{
+    width:80px;
+    height: 75px;
+}
+.r{
+    height:80px;
+    float: right;
+    padding:0px 20px 0px 0px;
+}
+.r h3{
+    margin:0;
+    padding: 0;
+    font-size: 24px;
+}
+.r span{
+    float: right;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+/*第一页*/
+.page1{
+    background: url("../image/indexbg.jpg");
+    color: #fff;
+}
+.wel{
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left: 0;
+    width:550px;
+    height: 300px;
+    margin:-150px 0px 0px 300px;
+    display: none;
+}
+.wel h1{
+    margin:0 auto;
+    font-size:40px;
+}
+.wel span{
+    font-size: 18px;
+    float: right;
+    margin-top: 25px;
+}
+.showMe{
+    width:500px;
+    height:50px;
+    position: absolute;
+    bottom:25%;
+    left: 50%;
+    margin:0px 0px 0px -250px;
+}
+.qq,.qun {
+    width: 200px;
+    height: 50px;
+    margin-right: 20px;
+    float: left;
+    line-height: 50px;
+    background: rgba(0, 0, 0, .3);
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+}
+/*第二页*/
+.page2{
+    background:rgba(168,132,98,7);
+}
+.aboutMy{
+    width:700px;
+    margin:0 auto;
+    text-align: center;
+    padding-top:150px;
+}
+.aboutMy .tit{
+    display: block;
+    font-size: 22px;
+    letter-spacing: 10px;
+    padding-top: 5px;
+    background: url("../image/span_line.png")bottom center no-repeat;
+}
+.content{
+    padding:50px 0px 0px 50px;
+    position: relative;
+}
+.content img{
+    float: left;
+    width:150px;
+    height: 150px;
+}
+.content p{
+    float:left;
+    margin-left: 20px;
+    width:400px;
+    font-size: 16px;
+}
+.btm{
+    width:100%;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    bottom: 0px;
+    background: rgba(233,150,122,1);
+    font-size: 16px;
+}
+.new{
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    .wel{
+        margin-left:100px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .wel{
+        margin-left: 20px;
+    }
+    .wel span{
+        font-size: 16px;
+        float: none;
+        padding-left: 80px;
+    }
+    .showMe{
+        margin-left:-210px;
+    }
+    .aboutMy{
+        width:500px;
+        padding-top: 60px;
+    }
+    .aboutMy img{
+        float: none;
+        width:220px;
+        height: 220px;
+        padding-top: 5px;
+    }
+    .aboutMy p{
+        float: none;
+        padding-top: 15px;
+        width:400px;
+    }
+}
+@media only screen and (max-width: 496px){
+    .wel{
+        margin-left: 0;
+    }
+    .wel span{
+        font-size: 16px;
+    }
+    .qq,.qun{
+        float: none;
+    }
+    .qun{
+        margin-top: 10px;
+    }
+    .showMe{
+        margin-left: -100px;
+    }
+    .aboutMy{
+        width:400px
+    }
+    .content{
+        padding:0;
+        padding-top:10px;
+    }
+    .aboutMy p{
+        float: none;
+        padding-top: 30px;
+    }
+    .erweima{
+        visibility: hidden;
+    }
+    .list{
+        position: absolute;
+        float: none;
+        width: 100%;;
+        overflow: hidden;
+        top:50px;
+        left: 0px;
+        background: rgba(0,0,0,.3);
+        padding-left: 30px;
+        display: none;
+    }
+    .list li+li{
+        display: block;
+    }
+    .z{
+        display: block;
+        cursor: pointer;
+        float: right;
+        margin:10px 30px 0 0;
+    }
+    .new{
+        display:none;
+        position: absolute;
+        right: 50px;
+        top:80px;
+    }
+    .new img{
+        width:100px;
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .wel span{
+        font-size: 12px;
+        padding-left: 20px;
+    }
+    .aboutMy{
+        width:350px
+    }
+    .content img{
+        width:200px;
+        height: 200px;
+        margin-left: -10px;
+    }
+    .content p{
+        font-size: 14px;
+        padding-top: 5px;
+        width:300px;
+    }
+    .btm{
+        height: 40px;
+    }
+}

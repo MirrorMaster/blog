@@ -1,0 +1,19 @@
+<?php
+       $type = D('User')->getTypeByName($uname);
+        $t = $type[0]['type'];
+        if($t==1){
+            $getMenu = D('Menu')->getMenuAll();
+        }else{
+            $getMenu = D('Menu')->getMenuByName($t);
+        }
+?>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-lg-1 nav">
+            <ul class="list-unstyled">
+                <li><a href="/blog/admin.php/index/admin"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a></li>
+                <foreach name="getMenu" item="vo">
+                    <li><a href="/blog/admin.php/{$vo.c}/{$vo.f}"><span class="glyphicon glyphicon-{$vo.icon}"></span>&nbsp;{$vo.name}</a></li>
+                </foreach>
+            </ul>
+        </div>

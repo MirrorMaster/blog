@@ -1,0 +1,34 @@
+$(function(){
+    $("#fullpage").fullpage({
+        fixedElements:'.top-menu',
+        scrollingSpeed:1000,
+        navigation:true,
+        navigationPosition:'right',
+        navigationTooltips:['首页','关于我'],
+        verticalCentered:false
+    })
+    $(".wel").fadeIn(2000);
+    $(".ding").hover(function(){
+        $(".erweima").stop().fadeIn();
+    },function(){
+        $(".erweima").stop().fadeOut();
+    })
+    $(".z").click(function(){
+        var zt =  $(".list").css("display");
+        //alert(zt)
+        if(zt=='none'){
+            $(".list").slideDown();
+            $(".new").slideDown();
+        }else{
+            $(".list").slideUp();
+            $(".new").slideUp();
+        }
+    })
+    $(".qun,.qq").hover(function(){
+        $(this).find(".about").fadeOut();
+        $(this).find(".lx").fadeIn();
+    },function(){
+        $(this).find(".lx").fadeOut();
+        $(this).find(".about").fadeIn();
+    })
+})

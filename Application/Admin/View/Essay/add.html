@@ -1,0 +1,66 @@
+<include file="Index/header"/>
+<include file="Index/nav"/>
+        <div class="content col-lg-11">
+            <span class="lead text-primary">添加文章</span>
+            <form  enctype="multipart/form-data" class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-lg-2">文章标题:</label>
+                    <div class="col-lg-5">
+                        <input name="title" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-lg-2">文章副标题:</label>
+                    <div class="col-lg-5">
+                        <input name="small_title" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">缩图:</label>
+                    <div class="col-lg-5">
+                        <input type="file" id="file_upload" multiple="true">
+                        <img style="display: none" width="150" height="150" id="upload_img" />
+                        <input type="hidden" name="thumb"  id="thumb" class="thumb" value="0">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">关键字:</label>
+                    <div class="col-lg-5">
+                        <select class="form-control" name="keywords">
+                            <foreach name="keywords" item="vo">
+                                <option value="{$vo.name}">{$vo.name}</option>
+                            </foreach>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">描述</label>
+                    <div class="col-lg-5">
+                        <input name="description" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">内容</label>
+                    <div class="col-lg-5">
+                            <textarea name="content" id="editor" class="form-control"></textarea>
+                    </div>
+                </div>
+                <button type="button" class="bai_ad btn btn-primary col-xs-12 col-lg-4 col-lg-push-2">添加</button>
+            </form>
+        </div>
+    <div/>
+<div/>
+<script>
+    var SCRIPT = {
+        'ajax_upload_swf' : '__PUBLIC__/vendor/uploadify/uploadify.swf',
+        'ajax_upload_url' : '/blog/admin.php/image/ajaxupload',
+        'save_url' : '/blog/admin.php/essay/save'
+    }
+    KindEditor.ready(function(K) {
+        window.editor = K.create('#editor',{
+            uploadJson : '/blog/admin.php/image/kindupload',
+            afterBlur : function(){this.sync();}
+        });
+    });
+</script>
+<include file="Index/fotter"/>

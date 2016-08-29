@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+body{
+    background-color: #223430;
+}
+/*通用类*/
+.r{
+    float: right;
+}
+.l{
+    float: left;
+}
+/*头部*/
+header{
+    height: 51px;
+    line-height: 50px;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+header h3{
+    line-height: 50px;
+    width: 300px;
+    float: left;
+    color: #ffffff;
+}
+header .right{
+    float: right;
+    position: relative;
+    width:100px;
+    text-align: center;
+    color: #ffffff;
+}
+/*后台导航*/
+.nav{
+    margin-top: 10px;
+    text-align: center;
+}
+.list-unstyled li{
+    text-align: right;
+}
+.list-unstyled li+li{
+    margin-top: 10px;
+}
+/*统一内容区*/
+.content{
+    background-color: #fff;
+    height: 600px;
+}
+.tips{
+    height: 30px;
+    line-height: 30px;
+    display: none;
+}
+/*分页样式*/
+.page{
+    width:100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.page .current{
+    color: #000;
+    display: inline-block;
+    width:30px;
+    text-align: center;
+    background-color: #2D93CA;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    margin:2px;
+}
+.page a{
+    color: #000;
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #2D93CA;
+    border-radius: 4px;
+    margin:1px;
+}
+.page .next,.page .prev,.page .last,.page .first{
+    color: #000;
+    display: inline-block;
+    width:70px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: #2D93CA;
+}

@@ -1,0 +1,48 @@
+<include file="Index/header"/>
+<include file="Index/nav"/>
+        <div class="col-lg-11 content">
+            <span class="text-primary lead">用户管理</span>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>用户名</th>
+                            <th>类型</th>
+                            <th>邮箱</th>
+                            <th>状态</th>
+                            <th>最后登陆IP</th>
+                            <th>最后登录时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <volist name="page" id="vo">
+                            <tr>
+                                <td>{$vo.id}</td>
+                                <td>{$vo.username}</td>
+                                <td>{$vo.type|showType=###}</td>
+                                <td>{$vo.email}</td>
+                                <td><a style="cursor: pointer;" class="changeStatus" title="更改状态" data-status={$vo.status} data-cId={$vo.id}>{$vo.status|showStatus=###}</a></td>
+                                <td>{$vo.last_login_ip}</td>
+                                <td>{$vo.last_login_time|date='Y-m-d h:i',###}</td>
+                                <td><a style="cursor: pointer;" class="del" title="删除" data-id = {$vo.id}><span style="color: #000;" class="glyphicon glyphicon-remove"></span></a>&nbsp;</td>
+                            </tr>
+                        </volist>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page">
+                {$pageRes}
+            </div>
+            <a href="/blog/admin.php/user/add" class="btn btn-primary">添加用户</a>
+        </div>
+    </div>
+</div>
+<script>
+    var SCRIPT = {
+        'delete_url' : '/blog/admin.php/user/del',
+        'status_url' : '/blog/admin.php/user/changeStatus'
+    }
+</script>
+<include file="Index/fotter"/>
