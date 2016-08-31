@@ -21,7 +21,7 @@
     <div class="row">
         <div class="header col-xs-12 col-lg-12">
             <a href="/blog/index.php/index/index"><img alt="logo" class="logo" src="/blog/Public/image/logo.png"/></a>
-            <img class="listPng" src="/blog/Public/image/list.png">
+            <img class="listPng" src="/public/image/list.png">
             <ul class="list-inline keyList">
                 <?php if(is_array($key)): foreach($key as $key=>$vo): ?><li><a href="/blog/index.php/index/blog?keyword=<?php echo ($vo["name"]); ?>"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; ?>
             </ul>

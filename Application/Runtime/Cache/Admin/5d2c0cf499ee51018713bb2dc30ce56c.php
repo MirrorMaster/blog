@@ -35,7 +35,7 @@
         </div>
 
 <div class="content col-lg-11">
-    <span class="lead text-primary">文章管理</span>
+    <span class="lead text-primary">推荐位管理</span>
     <div class="table-responsive">
         <table class="table table-hover">
             <thead>

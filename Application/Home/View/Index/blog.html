@@ -7,24 +7,24 @@
     <meta name="description" value="{$zd.description}" />
     <title>{$zd.title}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="/public/vendor/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/public/vendor/owl/owl.carousel.css"/>
-    <link rel="stylesheet" href="/publicvendor/owl/owl.theme.css"/>
-    <link rel="stylesheet" href="/public/css/blog.css"/>
-    <script src="/public/vendor/jquery.min.js"></script>
-    <script src="/public/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/public/vendor/owl/owl.carousel.min.js"></script>
-    <script src="/public/js/blog.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/vendor/owl/owl.carousel.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/vendor/owl/owl.theme.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/blog.css"/>
+    <script src="__PUBLIC__/vendor/jquery.min.js"></script>
+    <script src="__PUBLIC__/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/vendor/owl/owl.carousel.min.js"></script>
+    <script src="__PUBLIC__/js/blog.js"></script>
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
         <div class="header col-xs-12 col-lg-12">
-            <a href="/index.php/index/index"><img alt="logo" class="logo" src="/public/image/logo.png"/></a>
+            <a href="/blog/index.php/index/index"><img alt="logo" class="logo" src="__PUBLIC__/image/logo.png"/></a>
             <img class="listPng" src="/public/image/list.png">
             <ul class="list-inline keyList">
                 <foreach name="key" item="vo">
-                    <li><a href="/index.php/index/blog?keyword={$vo.name}">{$vo.name}</a></li>
+                    <li><a href="/blog/index.php/index/blog?keyword={$vo.name}">{$vo.name}</a></li>
                 </foreach>
             </ul>
         </div>
@@ -32,14 +32,14 @@
     <div class="row">
         <div class="col-lg-3 col-md-2 user">
             <div class="userCon">
-                <img src="/public/image/p.jpg"/>
+                <img src="__PUBLIC__/image/p.jpg"/>
                 <p>游客</p>
             </div>
             <div class="essayList">
                 <span class="lead">←最新文章</span>
                 <ul class="list-unstyled">
                     <foreach name="essayNew" item="eN">
-                        <li><a href="\/index.php/index/read?id={$eN.id}">{$eN.create_time|date='Y-m-d',###}&nbsp;&nbsp;《{$eN.title}》</a></li>
+                        <li><a href="/blog/index.php/index/read?id={$eN.id}">{$eN.create_time|date='Y-m-d',###}&nbsp;&nbsp;《{$eN.title}》</a></li>
                     </foreach>
                 </ul>
             </div>
@@ -52,7 +52,7 @@
               <foreach name="Position" item="z">
                   <div class="item">
                       <img src="{$z.thumb|isThumb=###}" />
-                      <a href="/index.php/index/read?id={$z.id}"><span class="lb_title">{$z.title}</span></a>
+                      <a href="/blog/index.php/index/read?id={$z.id}"><span class="lb_title">{$z.title}</span></a>
                   </div>
               </foreach>
             </div>
