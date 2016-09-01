@@ -2,12 +2,12 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-    public function index(){
+    public function blog(){
         $zd = D('Site')->sel();
         $this->assign('zd',$zd);
         return $this->display();
     }
-    public function blog($type=''){
+    public function index($type=''){
         if($_GET['keyword']){
             $key = $_GET['keyword'];
         }
@@ -18,7 +18,7 @@ class IndexController extends Controller {
         }else{
             $count = D('Essay')->count();
         }
-        $Page = new \Think\Page($count,3);
+        $Page = new \Think\Page($count,5);
         $Page->setConfig('last','尾页');
         $Page->setConfig('first','首页');
         $Page->setConfig('prev','上一页');
@@ -31,9 +31,11 @@ class IndexController extends Controller {
         }
         $Position = D('Essay')->selPosition();
         $essayNew = D('Essay')->selNew();
+        $showCount = D('Essay')->showCount();
         $this->assign('Position',$Position);
         $this->assign('key',$KeyList);
         $this->assign('zd',$zd);
+        $this->assign('showCount',$showCount);
         $this->assign('pageRes',$show);
         $this->assign('essayAll',$essay);
         $this->assign('essayNew',$essayNew);

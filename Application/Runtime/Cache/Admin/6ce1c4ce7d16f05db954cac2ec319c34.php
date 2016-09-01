@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>小白前端-后台首页</title>
+    <title>一点-后台首页</title>
     <link rel="stylesheet" href="/blog/Public/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/blog/Public/css/admin.css">
     <link rel="stylesheet" href="/blog/Public/vendor/uploadify/uploadify.css"/>
@@ -17,7 +17,7 @@
 </head>
 <body>
 <header>
-    <h3>小白前端<small>后台管理系统</small></h3>
+    <h3 style="margin-left: 10px">一点<small>后台管理系统</small></h3>
     <span class="right"><a href="/blog/admin.php/login/nset">退出登录</a></span>
     <span class="right">
         <span class="glyphicon glyphicon-user"></span><?php echo ($uname); ?>

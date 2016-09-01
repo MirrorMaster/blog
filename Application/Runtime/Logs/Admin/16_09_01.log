@@ -1,0 +1,1091 @@
+[ 2016-09-01T10:53:21+08:00 ] ::1 /blog/admin.php/user/sel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-01T10:53:22+08:00 ] ::1 /blog/admin.php/index/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:53:22+08:00 ] ::1 /blog/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:53:27+08:00 ] ::1 /blog/admin.php/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `b_adm_in` WHERE `username` = 'admin' AND `password` = '10d1ceb78a4a3b3a59f3692ee9510f76'  [ RunTime:0.0156s ]
+SQL: UPDATE `b_adm_in` SET `last_login_time`='1472698407',`last_login_ip`='0.0.0.0' WHERE ( username="admin" ) [ RunTime:0.0468s ]
+
+[ 2016-09-01T10:53:28+08:00 ] ::1 /blog/admin.php/index/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `b_essay` ORDER BY count desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_adm_in` WHERE `status` <> 0 AND `last_login_time` > 1472659200 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` WHERE `ok` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0475s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-01T10:53:36+08:00 ] ::1 /blog/admin.php/essay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0150s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0025s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.172503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.172503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-01T10:53:38+08:00 ] ::1 /blog/admin.php/essay/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `b_k_ey` WHERE `status` <> 0  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0025s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-01T10:53:39+08:00 ] ::1 /blog/admin.php/essay/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:54:12+08:00 ] ::1 /blog/admin.php/essay/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `b_k_ey` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:54:12+08:00 ] ::1 /blog/admin.php/essay/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:54:18+08:00 ] ::1 /blog/admin.php/essay/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `b_k_ey` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:54:18+08:00 ] ::1 /blog/admin.php/essay/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0075s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0025s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:54:29+08:00 ] ::1 /blog/admin.php/essay/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `b_k_ey` WHERE `status` <> 0  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:54:29+08:00 ] ::1 /blog/admin.php/essay/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0075s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:54:34+08:00 ] ::1 /blog/admin.php/essay/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `b_k_ey` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0025s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:54:35+08:00 ] ::1 /blog/admin.php/essay/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0075s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T10:54:47+08:00 ] ::1 /blog/admin.php/image/ajaxupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' C:\wamp\www\blog\Application\Common\Model\UploadImageModel.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' C:\wamp\www\blog\Application\Common\Model\UploadImageModel.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' C:\wamp\www\blog\Application\Common\Model\UploadImageModel.class.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\blog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-09-01T10:54:55+08:00 ] ::1 /blog/admin.php/essay/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 15 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: INSERT INTO `b_essay` (`title`,`small_title`,`thumb`,`keywords`,`description`,`create_time`,`update_time`) VALUES ('阿萨德','萨达 ','/blog/upload/2016/09/01/57c79877850fd.PNG','php','的d','1472698495','1472698495') [ RunTime:0.0468s ]
+NOTIC: [2048] Declaration of Common\Model\ContentModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\ContentModel.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `b_con_t_en_t` [ RunTime:0.0468s ]
+SQL: INSERT INTO `b_con_t_en_t` (`content`,`create_time`) VALUES ('&amp;nbsp;的','1472698495') [ RunTime:0.0312s ]
+
+[ 2016-09-01T10:54:57+08:00 ] ::1 /blog/admin.php/essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0200s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-01T11:34:10+08:00 ] ::1 /blog/admin.php/essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0275s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T11:34:25+08:00 ] ::1 /blog/admin.php/essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0025s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-01T11:34:32+08:00 ] ::1 /blog/admin.php/site/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\SiteModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\SiteModel.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-01T11:36:27+08:00 ] ::1 /blog/admin.php/site/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\SiteModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\SiteModel.class.php 第 5 行.
+
+[ 2016-09-01T11:36:28+08:00 ] ::1 /blog/admin.php/site/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\SiteModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\SiteModel.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T11:36:47+08:00 ] ::1 /blog/admin.php/site/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [2048] Declaration of Common\Model\SiteModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\SiteModel.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0025s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-09-01T12:49:53+08:00 ] ::1 /blog/admin.php/essay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T12:49:57+08:00 ] ::1 /blog/admin.php/menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0060s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\MenuModel.class.php on line 22 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_m_enu` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `b_m_enu` LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T12:49:58+08:00 ] ::1 /blog/admin.php/cron/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T12:49:59+08:00 ] ::1 /blog/admin.php/key/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php on line 19 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_k_ey` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `b_k_ey` LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-01T12:50:00+08:00 ] ::1 /blog/admin.php/user/sel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\UserModel.class.php on line 36 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_adm_in` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `b_adm_in` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-01T12:50:03+08:00 ] ::1 /blog/admin.php/key/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0060s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php on line 19 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_k_ey` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `b_k_ey` LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-01T12:50:05+08:00 ] ::1 /blog/admin.php/key/changeStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0156s ]
+SQL: UPDATE `b_k_ey` SET `status`='1' WHERE ( id=15 ) [ RunTime:0.0468s ]
+
+[ 2016-09-01T12:50:06+08:00 ] ::1 /blog/admin.php/key/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php on line 19 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_k_ey` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `b_k_ey` LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T12:50:08+08:00 ] ::1 /blog/admin.php/essay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-01T12:50:09+08:00 ] ::1 /blog/admin.php/essay/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `b_k_ey` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-01T12:50:09+08:00 ] ::1 /blog/admin.php/essay/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-01T12:50:12+08:00 ] ::1 /blog/admin.php/essay/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 15 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: INSERT INTO `b_essay` (`title`,`small_title`,`thumb`,`keywords`,`description`,`create_time`,`update_time`) VALUES ('asd','asd','0','js','asd','1472705412','1472705412') [ RunTime:0.0532s ]
+NOTIC: [2048] Declaration of Common\Model\ContentModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\ContentModel.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `b_con_t_en_t` [ RunTime:0.0156s ]
+SQL: INSERT INTO `b_con_t_en_t` (`content`,`create_time`) VALUES ('asd','1472705412') [ RunTime:0.0644s ]
+
+[ 2016-09-01T12:50:13+08:00 ] ::1 /blog/admin.php/essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\EssayModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\EssayModel.class.php on line 26 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_essay` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_essay` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `b_essay` ORDER BY create_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-01T12:51:19+08:00 ] ::1 /blog/admin.php/key/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php on line 19 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_k_ey` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `b_k_ey` LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-01T12:51:20+08:00 ] ::1 /blog/admin.php/key/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.200011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.201011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-01T12:51:25+08:00 ] ::1 /blog/admin.php/key/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `b_k_ey` WHERE ( "name=""Linux" )  [ RunTime:0.0370s ]
+SQL: INSERT INTO `b_k_ey` (`name`,`status`,`create_time`,`create_name`) VALUES ('Linux','1','1472705485','admin') [ RunTime:0.2686s ]
+
+[ 2016-09-01T12:51:26+08:00 ] ::1 /blog/admin.php/key/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `b_k_ey` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in C:\wamp\www\blog\Application\Common\Model\KeyModel.class.php on line 19 and defined C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where C:\wamp\www\blog\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `b_k_ey` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `b_k_ey` LIMIT 0,2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `b_adm_in` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `b_adm_in` WHERE ( username="admin" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `b_m_enu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `b_m_enu` WHERE `status` <> 0  [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

@@ -81,5 +81,8 @@ class EssayModel extends Model{
         );
         return $this->_db->where($date)->count();
     }
+    public function showCount(){
+        return $this->_db->order('count desc')->limit(5)->select();
+    }
 }
 ?>

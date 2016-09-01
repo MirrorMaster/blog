@@ -1,1 +1,1 @@
-a:3:{s:5:"title";s:12:"小白前端";s:8:"keywords";s:25:"web 分享 技术 博客 ";s:11:"description";s:92:"一个前端小白分享技术的博客 如果有什么错误的地方 大家可以告诉我";}
+a:3:{s:5:"title";s:25:"一点-每天进步一点";s:8:"keywords";s:38:"web,php,javascript,linux,技术,分享";s:11:"description";s:77:"一个普通的码农,把每天学到的知识与大家进行分享与讨论.";}

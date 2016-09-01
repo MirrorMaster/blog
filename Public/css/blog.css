@@ -1,200 +1,179 @@
-.r{
-    float: right;
-}
-.l{
-    float: left;
+/*通用*/
+html{
+    font-size: 62.5%;
+    color: #222;
 }
 body{
-    background-color: #fbffca;
-    position: relative;
+    background-color: #f5f6f9;
 }
-/*顶部*/
-.header{
-    background: #99CCCC;
-    color: #fff;
-    overflow: hidden;
-    line-height: 50px;
-    font-size: 18px;
+ul{
+    list-style: none;
 }
-.keyList{
-    float: right;
-    display: block;
-}
-.keyList a{
-    display: inline-block;
-    color: #fff;
+a{
     text-decoration: none;
 }
-.keyList a:hover{
-    color: #c4f8c8;
+/*头部*/
+.header{
+    width:100%;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 4px 2px #c7c7c7;
+    position: fixed;
+    z-index:9999;
 }
-.listPng{
-    display: none;
-    float: right;
-    margin-top: 10px;
-    cursor: pointer;
+.center{
+    width:80%;
+    margin:0 auto;
 }
 .logo{
-    margin-top: 10px;
+    display: inline-block;
+    width:220px;
+    height: 50px;
+    background: url("../image/logo.png");
+    margin-top:5px;
 }
-/*用户部分*/
-.user{
-    margin-top: 50px;
-    height: 500px;
-    background-color: #CCFFCC;
+.keyList{
+    font-size: 0;
+    float: right;
+    margin-right: 10px;
+    line-height: 70px;
+}
+.keyList li{
+    font-size: 2.4rem;
+    display: inline-block;
+    margin-left: 10px;
+}
+.keyList li a{
+    color: #000;
+}
+.keyList li a:hover{
+    color: #24abd7;
+    text-decoration: none;
+}
+.list{
+    float: right;
+    line-height: 70px;
+    cursor: pointer;
+    display: none;
+}
+/*底部内容区*/
+.content{
+    padding-top: 70px;
+    width:80%;
+    min-height: 1700px;
+    margin: 0 auto;
+    overflow: hidden;
     position: relative;
 }
-.userCon{
-    width:80%;
-    height:150px;
-    margin:0 auto;
-    margin-top: 50px;
-    position: relative;
-}
-.userCon img{
-    width: 120px;
-    height: 120px;
-    border: 2px solid #fff;
-    border-radius:100%;
-    margin:auto;
-    position: absolute;
-    left:0; right: 0;
-}
-.userCon p{
-    position: absolute;
-    left: 0; right: 0;
-    bottom:0;
-    text-align: center;
-    font-size: 16px;
-    letter-spacing:2px;
-}
-.essayList{
-    margin-top: 30px;
+
+/*轮播图样式*/
+.item{
+    margin-top: 20px;
     width:100%;
+    height: 400px;
 }
-.essayList span{
-    text-align: right;
-    display: block;
-}
-/*推荐位*/
-.banner{
-    width:80%;
-    height: 350px;
-    margin:20px auto;
-}
-.banner .item{
+.item>img{
     width:100%;
-    height: 300px;
+    height: 400px;
 }
-.banner .item img{
-    height: 300px;
-    position: absolute;
-    left: 0;
-    top:0;
-    z-index:-1;
-}
-.banner .lb_title{
+.item>span{
     width:100%;
     height: 40px;
     line-height: 40px;
-    display: inline-block;
-    background: rgba(0,0,0,.3);
-    position: absolute;
-    bottom: 0;
-    left: 0;
     padding-left: 10px;
-    font-size: 22px;
+    font-size: 1.8rem;
     color: #fff;
-}
-/*文章部分*/
-.items{
-    width:80%;
-    height: 150px;
-    margin:20px auto;
-    overflow: hidden;
-    position: relative;
-    background-color: rgba(0,0,0,.2);
-}
-.item_small{
-    color: #fff;
-}
-.item_image{
-    width:20%;
-    float: left;
-}
-.item_image img{
-    width:100%;
-    height: 150px;
-}
-.item_body{
-    width:74%;
-    float: left;
-    margin-left: 20px;
-    position: relative;
-    height: 100%;
-}
-.item_body button{
-    position: absolute;
-    bottom:0;
-    right: 0;
-}
-.item_title{
-    width:100%;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-}
-.tq{
     position: absolute;
     bottom: 0;
+    background-color: rgba(0,0,0,.3);
 }
-@media (max-width: 1200px){
-    .tq{
-        display: none;
-    }
+
+/*文章*/
+.essay{
+    width:70%;
+    overflow: hidden;
+    float: left;
+    display: inline-block;
 }
-@media (max-width: 992px){
-    .user{
-        display: none;
-    }
-    .owl-item,.banner,.owl-carousel,.owl-theme{
-        display: none;
-        width: 0;
-        height: 0;
-    }
+.essay_body:first-child{
+    margin-top: 30px;
 }
-@media (max-width:490px){
-    .items{
-        margin:30px;
-        margin-bottom: 40px;
-    }
-    .item_small,.item_image{
-        display: none;
-    }
-    .item_body{
-        width:90%;
-    }
-    .keyList{
-        display: block;
-        width:100%;
-        display: none;
-    }
-    .keyList li{
-        float: none;
-        clear: both;
-        display: block;
-        text-align: right;
-    }
-    .listPng{
-        display: inline-block;
-    }
+.essay_body{
+    width:100%;
+    height: 200px;
+    padding:15px;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+    margin-top: 10px;
+    position: relative;
+}
+.essay_body>img{
+    display: inline-block;
+    height: 100%;
+    width:130px;
+    float: left;
+}
+.essay_content{
+    display: inline-block;
+    margin-left: 20px;
+    float: left;
+}
+.essay_body>a{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.show{
+    width:27%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: none;
+}
+.new,.count,.tell{
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+    min-height: 200px;
+}
+.new>h3,.count>h3,.tell>h3{
+    display: inline-block;
+    padding: 0;
+    border-bottom: 2px solid #2aabd2;
+}
+.tell li{
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    margin-top: 15px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+.xinl{
+    background-color: #ff0c19;
+}
+.qq{
+    background-color: #24abd7;
+}
+.qqw{
+    background-color: #288bd7;
+}
+.github{
+    background-color: #626262;
+}
+.email{
+    background-color: #85894c;
+}
+.count{
+    margin-top: 40px;
 }
 /*分页样式*/
 .page{
-    width:80%;
+    width:100%;
     font-size: 16px;
-    margin:0 auto;
+    margin-bottom: 10px;
+    margin-top:15px;
+    clear: both;
+    overflow: hidden;
 }
 .page .current{
     color: #000;
@@ -226,4 +205,50 @@ body{
     line-height: 30px;
     border-radius: 4px;
     background-color: #2D93CA;
+}
+/*页脚*/
+.fotter{
+    width:100%;
+    height: 150px;
+    line-height: 140px;
+    background-color: #223430;
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.fotter>p{
+    font-size: 1.2rem;
+}
+/*响应式*/
+@media (max-width: 980px){
+    .show{
+        display: none !important;
+    }
+    .essay{
+        width: 100%;
+    }
+    .new>h3,.count>h3,.tell>h3{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .essay_body>img{
+        display: none;
+    }
+    .list{
+        display: block;
+    }
+    .keyList{
+        position: absolute;
+        left: 0;
+        top:70px;
+        width:100%;
+        background-color: #fff;
+        display: none;
+    }
+    .keyList li{
+        display: block;
+        text-align: right;
+        padding-right: 30px;
+    }
 }

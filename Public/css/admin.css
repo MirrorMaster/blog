@@ -58,7 +58,7 @@ header .right{
 /*统一内容区*/
 .content{
     background-color: #fff;
-    height: 600px;
+    min-height: 700px;
 }
 .tips{
     height: 30px;

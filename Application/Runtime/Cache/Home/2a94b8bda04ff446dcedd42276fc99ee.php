@@ -7,60 +7,66 @@
     <meta name="description" value="<?php echo ($zd["description"]); ?>" />
     <title><?php echo ($zd["title"]); ?></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="/blog/Public/vendor/fullPage/jquery.fullPage.css">
-    <link rel="stylesheet" href="/blog/Public/css/index.css">
+    <link rel="stylesheet" href="/blog/Public/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/blog/Public/vendor/owl/owl.carousel.css"/>
+    <link rel="stylesheet" href="/blog/Public/vendor/owl/owl.theme.css"/>
+    <link rel="stylesheet" href="/blog/Public/css/blog.css"/>
     <script src="/blog/Public/vendor/jquery.min.js"></script>
-    <script src="/blog/Public/vendor/fullpage/jquery.fullPage.min.js"></script>
-    <script src="/blog/Public/js/main.js"></script>
+    <script src="/blog/Public/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/blog/Public/vendor/owl/owl.carousel.min.js"></script>
+    <script src="/blog/Public/js/blog.js"></script>
 </head>
 <body>
-<div class="top-menu">
-    <a href="index.html" class="logo"><img src="/blog/Public/image/logo.png"></a>
-    <span class="hide z"><img src="/blog/Public/image/list.png"></span>
-    <ul class="list">
-        <li class="ding">
-            <a href="##">订阅号</a>
-            <div class="erweima">
-                <img src="/blog/Public/image/er.jpg">
-                <div class="r">
-                    <h3>小白前端</h3>
-                    <span>分享技术,分享经验</span>
-                </div>
-            </div>
-        </li>
-        <li><a href="/blog/index.php/index/blog">我的博客</a></li>
-        <li><a href="#">前端论坛</a></li>
-        <li><a href="#">留言板</a></li>
-    </ul>
-    <div class="new"><img src="/blog/Public/image/er.jpg"></div>
+<div class="header">
+    <div class="center">
+        <div class="logo"></div>
+        <div class="list"><img src="/blog/Public/image/list.png"/></div>
+        <ul class="keyList">
+            <?php if(is_array($key)): foreach($key as $key=>$vo): ?><li><a href="/blog/index.php/index/index?keyword=<?php echo ($vo["name"]); ?>"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; ?>
+        </ul>
+    </div>
 </div>
-<div id="fullpage">
-    <div class="section page1">
-        <div class="wel">
-            <h1>小白前端</h1>
-            <span>--分享是一种神奇的东西，它使快乐增大，它使悲伤减小</span>
-        </div>
-        <div class="showMe">
-            <div class="qq">
-                <span class="about">如何联系到我?</span>
-                <span class="lx">QQ:1028227712</span>
-            </div>
-            <div class="qun">
-                <span class="about">前端交流群!</span>
-                <span class="lx">542778007</span>
-            </div>
+<div class="content">
+    <div id="position" class="position">
+        <?php if(is_array($Position)): foreach($Position as $key=>$p): ?><div class="item">
+                <img src="<?php echo (isThumb($p["thumb"])); ?>" alt="推荐位缩图">
+                <span><?php echo ($p["title"]); ?></span>
+            </div><?php endforeach; endif; ?>
+    </div>
+    <div class="essay">
+        <?php if(is_array($essayAll)): foreach($essayAll as $key=>$e): ?><div class="essay_body">
+                <img src="<?php echo (isThumb($e["thumb"])); ?>" alt="文章缩图" />
+                <div class="essay_content">
+                    <h2><?php echo ($e["title"]); ?><small><?php echo ($e["small_title"]); ?></small></h2>
+                    <p><?php echo ($e["description"]); ?></p>
+                </div>
+                <a href="/blog/index.php/index/read?id=<?php echo ($e["id"]); ?>" class="btn btn-primary">阅读</a>
+            </div><?php endforeach; endif; ?>
+        <div class="page">
+            <?php echo ($pageRes); ?>
         </div>
     </div>
-    <div class="section page2">
-        <div class="aboutMy">
-            <span class="tit">关于我</span>
-            <div class="content">
-                <img src="/blog/Public/image/p.jpg">
-                <p>一名普普通通的码农,想通过博客的方式把自己学会的东西分享给更多的人.也希望大家可以通过留言板或者"有可能会有的"前端论坛来分享自己的经验.爱好就是电影,代码,游戏和健身吧.欢迎大家加入我的QQ群:542778007.这是第一次建个人网站,所以也没有那么多的东西来展示出来吧,所以总觉得页面空荡荡的,但是没关系 慢慢来吧</p>
-            </div>
-        </div>
-        <div class="btm">这里我想弄一个友情链接的 如果想在这里添加友情链接 可以联系我QQ:1028227712</div>
+    <div class="show">
+        <ul class="new">
+            <h3>最新文章</h3>
+            <?php if(is_array($essayNew)): foreach($essayNew as $key=>$n): ?><li><a href="/blog/index.php/index/read?id=<?php echo ($n["id"]); ?>"><?php echo (date("Y-m-d",$n["create_time"])); ?>&nbsp;&nbsp;<?php echo ($n["title"]); ?></a></li><?php endforeach; endif; ?>
+        </ul>
+        <ul class="count">
+            <h3>浏览次数最多的文章</h3>
+            <?php if(is_array($showCount)): foreach($showCount as $key=>$s): ?><li><a href="/blog/index.php/index/read?id=<?php echo ($s["id"]); ?>"><?php echo ($s["title"]); ?>&nbsp;&nbsp;&nbsp;共(<?php echo ($s["count"]); ?>次浏览)</a></li><?php endforeach; endif; ?>
+        </ul>
+        <ul class="tell">
+            <h3>快来关注我吧</h3><br/>
+            <li class="qq"><img src="/blog/Public/image/QQ.png"title="QQ" alt="QQ"/></li>
+            <li class="qqw"><img src="/blog/Public/image/QQw.png"title="QQ" alt="QQ"/></li>
+            <li class="xinl"><img src="/blog/Public/image/xinl.png"title="QQ" alt="QQ"/></li>
+            <li class="email"><img src="/blog/Public/image/email.png"title="QQ" alt="QQ"/></li>
+            <li class="github"><img src="/blog/Public/image/github.png"title="QQ" alt="QQ"/></li>
+        </ul>
     </div>
+</div>
+<div class="fotter">
+    <p>如果想在本站添加友情链接或广告位可以联系我 QQ:1028227712</p>
 </div>
 </body>
 </html>
